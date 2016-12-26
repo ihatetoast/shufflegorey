@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Irish+Grover" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<title>The Helpless Doorknob</title>
 	</head>
 	<body>
-	<header>
-		<h1>the helpless doorknob: a shuffled story</h1>
-		<h3>by Edward Gorey</h3>
-	</header>
+		<header>
+			<h1>the helpless doorknob: a shuffled story</h1>
+			<h3>by Edward Gorey</h3>
+		</header>
+		<div class="instructions">
+			<p>My dad and stepmom gave me a deck of 25 cards that had one sentence with illustration from Edward Gorey. According to the box, there are 2,432,902,069,736,640,000 different versions of the story. This app is my thank-you note.</p>
+			<p>Click Helpless Doorknob for one version. Every time you click, a new shuffled story will appear so that you can compare them.</p>
+		</div>
+		<div class="buttons">
+			<button id="helpless"><img src="assets/thd.png"></button>
+			<button id="clear"><img src="assets/clear.png"></button>
+		</div>
+		<div id="shuffledStory">
+			
+		</div>
 
-		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-
-		<script type="text/javascript" src="scripts/main.js"></script>
-		<script type="text/javascript" src="scripts/gorey.js"></script>
-		
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/gorey.js"></script>	
 	</body>
 </html>
