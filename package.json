@@ -1,0 +1,27 @@
+{
+  "name": "shufflegorey",
+  "version": "1.0.0",
+  "description": "a thank-you app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihatetoast/shufflegorey.git"
+  },
+  "keywords": [
+    "fisher-yates",
+    "edward",
+    "gorey"
+  ],
+  "author": "Katy Cassidy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihatetoast/shufflegorey/issues"
+  },
+  "homepage": "https://github.com/ihatetoast/shufflegorey#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
