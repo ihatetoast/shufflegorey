@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(() => {
 	//fisher-yates shuffle prototype
 	Array.prototype.shuffle = function(){
 		var index = this.length, randomIndex, temp;
@@ -14,13 +14,11 @@ $(document).ready(function(){
 		}
 		return this;
 	}
-	var version = 0;
-	$("#helpless").click(function(){
+	let version = 0;
+	$("#helpless").click(() => {
 		$("#shuffledStory").html("")
-		var newStory = goreyArray.shuffle().join('');
-		version +=1;
-		console.log("Version is "+version+newStory);
-		
+		let newStory = goreyArray.shuffle().join('');
+		version +=1;	
 		$("#shuffledStory").prepend(`
 			<div class="shuffledStory">
 			<h3>The Helpless Doorknob, v${version}</h3>
@@ -28,9 +26,8 @@ $(document).ready(function(){
 			</div>
 			`);
 	});
-	$("#clear").click(function(){
+	$("#clear").click(() =>{
 		$("#shuffledStory").html(`<img  class="image" src="http://ep.yimg.com/ay/pomegranate/the-helpless-doorknob-a-shuffled-story-by-edward-gorey-125.jpg" >`);
-		
 	})
 	
 })
