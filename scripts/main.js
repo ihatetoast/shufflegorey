@@ -16,6 +16,7 @@ $(document).ready(function(){
 	}
 	var version = 0;
 	$("#helpless").click(function(){
+		$("#shuffledStory").html("")
 		var newStory = goreyArray.shuffle().join('');
 		version +=1;
 		console.log("Version is "+version+newStory);
@@ -28,7 +29,8 @@ $(document).ready(function(){
 			`);
 	});
 	$("#clear").click(function(){
-		$("#shuffledStory").html("");
+		$("#shuffledStory").html(`<img  class="image" src="http://ep.yimg.com/ay/pomegranate/the-helpless-doorknob-a-shuffled-story-by-edward-gorey-125.jpg" >`);
+		
 	})
 	
 })

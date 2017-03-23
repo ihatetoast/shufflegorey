@@ -20,15 +20,34 @@ h1 {
 
 button {
   background: transparent;
-  border: none; }
+  border: none;
+  height: 9.75em;
+  width: 9.75em;
+  border-radius: 50%;
+  line-height: 9.75em; }
 
-img {
+button:hover {
+  background: #000; }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #9e171c; }
+
+.image {
+  width: 20em;
+  margin: 0 3em; }
+
+.gravestones {
   height: 8em; }
 
 .instructions {
   display: inline-block;
   width: 65%;
   padding: 0 3em; }
+  .instructions span {
+    color: #9e171c;
+    font-weight: bold; }
 
 .buttons {
   display: inline-block;
